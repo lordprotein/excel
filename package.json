@@ -4,7 +4,9 @@
   "description": "Pure JS excel app",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/lordprotein/excel/issues"
   },
-  "homepage": "https://github.com/lordprotein/excel#readme"
+  "homepage": "https://github.com/lordprotein/excel#readme",
+  "private": true,
+  "devDependencies": {
+    "webpack": "^5.2.0",
+    "webpack-cli": "^4.1.0"
+  }
 }
